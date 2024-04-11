@@ -33,11 +33,25 @@ function AppHeader() {
 
           {/* Theme switcher small screen */}
           <div
-            aria-label="Theme Switcher"
-            className="block sm:hidden ml-0 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
-          ></div>
+						aria-label="Theme Switcher"
+						className="block sm:hidden ml-0 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
+					>
+						{ i18n.language=='en' && <button onClick={()=>{
+				i18n.changeLanguage('ar');
+			}} className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-xl ">
+              AR
+            </button>}
+
+            { i18n.language=='ar' &&<button onClick={()=>{
+				i18n.changeLanguage('en');
+			}}  className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-xl">
+              EN
+            </button>}
+					</div>
 
           {/* Small screen hamburger menu */}
+
+          
           <div className="sm:hidden">
             <button
               onClick={toggleMenu}
@@ -57,10 +71,14 @@ function AppHeader() {
                 )}
               </svg>
             </button>
+            
           </div>
         </div>
 
         {/* Header links small screen */}
+        
+        
+        
         <div
           className={
             showMenu
