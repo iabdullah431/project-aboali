@@ -6,7 +6,7 @@ const contacts = [
 
 	{
 		id: 2,
-		name: 'info@rayidtranding.com',
+		name: 'info@raid-alanzi.com',
 		icon: <FiMail />,
 	},
 	{
