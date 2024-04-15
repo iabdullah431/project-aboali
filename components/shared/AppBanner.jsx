@@ -54,7 +54,6 @@ function AppBanner() {
   width={500}
   height={500}
   className="ms-2"
-  alt="Developer" 
 />
       </motion.div>
     </motion.section>
