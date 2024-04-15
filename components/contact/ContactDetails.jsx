@@ -21,7 +21,7 @@ function ContactDetails() {
 
 	return (
 		<div className="w-full">
-			<div className="text-left max-w-xl px-6">
+			<div className="text-start max-w-xl px-6">
 				<h2 className="font-general-medium text-2xl text-primary-dark dark:text-primary-light mt-12 mb-8">
 					
 				</h2>

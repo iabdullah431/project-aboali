@@ -17,7 +17,7 @@ function AboutMeBio() {
         />
       </div>
 
-      <div className="font-general-regular w-full sm:w-3/4 text-left">
+      <div className="font-general-regular w-full sm:w-3/4 text-start">
         
           <div
             className="mb-4 flex flex-col  text-ternary-dark dark:text-ternary-light text-lg"
